@@ -1,0 +1,18 @@
+{
+    "name": "Booking helper",
+    "version": "0.0.1",
+    "description": "Global view of booking",
+    "icons":{
+      "16": "images/BG_OMEGAPOINT_PETROLEUM.jpg",
+      "48": "images/BG_OMEGAPOINT_PETROLEUM.jpg",
+      "128": "images/BG_OMEGAPOINT_PETROLEUM.jpg"
+    },
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+      {
+        "matches": ["https://officebooking.omegapoint.no/*"],
+        "js": ["pageEditor.js"]
+      }
+    ],
+    "manifest_version": 3
+  }
